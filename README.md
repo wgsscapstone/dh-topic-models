@@ -7,7 +7,7 @@ The first step is to click on the "Fork" button in this repository. It will make
 copy under your username that you can control.
 
 Next, click on the Settings tab (in your fork). Scroll to the GitHub Pages section.
-Select "maste Branch" under **Source**. This will make your repostiory show up 
+Select "master Branch" under **Source**. This will make your repostiory show up 
 as a website. It can sometimes take a while (upwards of 30 minutes or more) for 
 this first push to work, so that is why we are starting here. There should be a 
 link on the settings page once you do this pointing to your new website.
