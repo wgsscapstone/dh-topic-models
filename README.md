@@ -245,15 +245,19 @@ Finally, we now commit the new data files you just built to the GitHub fork
 you have. Drag and drop the data files into the "data" directory on GitHub.
 
 If your page is published, you should see the new topic models! Note that you
-may need to open an incognito mode to refresh the JSON files. If you site is, on
-a mac you open a terminal and run the following:
+may need to open an incognito mode to refresh the JSON files.
+
+If the site is not loading fast enough, on a mac you can download the whole
+repository as a zip file. Unzip and and open a terminal window. You need to
+`cd` into the directory and then run a command to start a webserver locally.
+If you put the file on the Desktop, just run this:
 
 ```{sh}
-cd ~/Desktop
+cd ~/Desktop/dh-topic-models
 python2 -m SimpleHTTPServer 8001
 ```
 
-And then open a browser to the url `http://0.0.0.0:8001/`. 
+Finally, open a browser to the url `http://0.0.0.0:8001/`. 
 
 ### Step 8: Tweaks
 
