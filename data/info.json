@@ -1,0 +1,57 @@
+{
+    "title": "",
+    "meta_info": "",
+    "VIS": {
+        "bib_view": {
+            "major": "issue",
+            "minor": "journal",
+            "dir": "up"
+        },
+        "prefab_plots": false,
+        "model_view": {
+            "w": 500,
+            "aspect": 2,
+            "words": 8,
+            "size_range": [
+                6,
+                14
+            ],
+            "yearly": {
+                "w": 500,
+                "label_threshold": 30
+            },
+            "name_size": 13
+        },
+        "word_view": {
+            "row_height": 100,
+            "w": 700,
+            "topic_label_leading": 16,
+            "m": {
+                "left": 150,
+                "right": 50,
+                "top": 50,
+                "bottom": 0
+            }
+        },
+        "bib": {
+            "author_delimiter": ", "
+        },
+        "special_issue_class": "special_issue_nohighlight",
+        "hidden_topics": [
+            8,
+            44,
+            49
+        ],
+        "show_hidden_topics": false
+    },
+    "issues": [
+
+    ],
+    "names": {
+        "1": "Topic 001",
+        "2": "Topic 002",
+        "3": "Topic 003",
+        "4": "Topic 004"
+    }
+}
+
