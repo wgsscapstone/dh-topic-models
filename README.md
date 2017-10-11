@@ -119,7 +119,7 @@ load_data <- function(directory) {
 And then this one:
 
 ```{r}
-build_webpage <- function(name, obj, titles) {
+build_webpage <- function(obj, titles) {
 
   # grab docs, words, and vocabulary
   docs <- obj@gamma
