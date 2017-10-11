@@ -253,7 +253,7 @@ repository as a zip file. Unzip and and open a terminal window. You need to
 If you put the file on the Desktop, just run this:
 
 ```{sh}
-cd ~/Desktop/dh-topic-models
+cd ~/Desktop/dh-topic-models-master
 python2 -m SimpleHTTPServer 8001
 ```
 
@@ -265,14 +265,3 @@ Hopefully, you were able to get this all to work and run on GitHub. Next, you
 should try to tweak the output. An obvious next step is to play with a different 
 number of topics. You can also edit the file "info.json" and name the topics
 and edit the "index.html" file to name your model.
-
-
-
-
-
-
-
-
-
-
-
