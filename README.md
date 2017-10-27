@@ -66,7 +66,7 @@ and display them online. These look scary, but we are just copy and pasting
 them into R. First:
 
 ```{r}
-load_data <- function(directory) {
+load_data <- function(directory, nfiles = Inf) {
 
   # get titles
   xml_in <- dir(file.path(directory, "all_xml"), full.names = TRUE)
@@ -82,6 +82,7 @@ load_data <- function(directory) {
 
   # get text files
   fin <- dir(file.path(directory, "all_topic_model"), full.names = TRUE)
+  if (is.finite(nfiles)) fin <- sample(fin, nfiles)
   data <- data_frame(fin = basename(fin), text = "")
 
   for (i in seq_along(fin)) {
