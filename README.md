@@ -106,12 +106,13 @@ load_data <- function(directory, nfiles = Inf) {
   text_dtm <- cast_dtm(word_counts, id, word, n)
 
   # join titles to the text_dtm dataset
-  docs <- sapply(strsplit(text_dtm$dimnames$Docs, split = "-"), getElement, 1)
-  title_data$doc_id <- sapply(strsplit(title_data$fin, split = "\\."), getElement, 1)
-  id <- match(docs, title_data$doc_id)
+  title_data$fin <- gsub(".xml", "-ngram1.txt", title_data$fin, fixed=TRUE)
+  docs <- text_dtm$dimnames$Docs
+  id <- match(docs, title_data$fin)
   title <- rep("", length(id))
   title[!is.na(id)] <- title_data$title[id[!is.na(id)]]
   text_dtm$title <- title
+  text_dtm$title[is.na(text_dtm$title)] <- docs[is.na(text_dtm$title)]
 
   return(text_dtm)
 }
