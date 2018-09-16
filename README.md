@@ -207,17 +207,18 @@ do this by running the following command (to save at the Desktop
 on a Mac):
 
 ```{r}
-setwd("~/Desktop")
+setwd("~/Desktop/")
 ```
 
 You can use the GUI menus as well if you have trouble with that.
+You can do this by going to Session -> Set Working Directory -> Choose Directory
 Then, we read in the datasets that you just unzipped. To do this,
 run the following line with the path *containing* your unzipped
 files (not the files themselves). So, if you put them on the Desktop,
 do this:
 
 ```{r}
-text_dtm <- load_data("~/Desktop/")
+text_dtm <- load_data("~/Desktop/NAMEOFYOURFOLDER")
 ```
 
 Now, we'll use that data and run a topic model over it. Here I am
