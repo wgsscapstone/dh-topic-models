@@ -117,6 +117,7 @@ load_data <- function(directory, nfiles = Inf) {
   return(text_dtm)
 }
 ```
+(Note: If your computer is having problems processing the number of texts, we can set a number for 'nfiles'.)
 
 And then this one:
 
@@ -232,6 +233,11 @@ lda_model <- LDA(text_dtm, k = 25, method = "Gibbs",
 ```
 
 Warning: this may take a few minutes depending on the size of your dataset.
+
+**To adjust the number of topics, change the number for k.**
+
+If your computer is taking a lont time to process, you can 
+reduce the nubmer of iterations by adjust 'iter = #'. 
 
 Now, we build the data that supports the website. 
 
