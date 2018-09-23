@@ -268,5 +268,5 @@ Finally, open a browser to the url `http://0.0.0.0:8001/`.
 
 Hopefully, you were able to get this all to work and run on GitHub. Next, you
 should try to tweak the output. An obvious next step is to play with a different 
-number of topics. You can also edit the file "info.json" and name the topics
-and edit the "index.html" file to name your model.
+number of topics. You can also edit the file "info.json"  and name the topics (located in the 'data' folder)
+and edit the "index.html" file to name your model (in 'dh-topic-models' folder).
