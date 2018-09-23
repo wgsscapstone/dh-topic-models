@@ -204,23 +204,16 @@ Now, we should be ready to do some real work in R!
 
 ### Step 6: Running Topic Models in R
 
-We want to tell R where to save the output of our models. We can
-do this by running the following command (to save at the Desktop
-on a Mac):
+We want to tell R where to save the output of our models. 
+You can use the GUI menus. You can do this by going to 
+Session -> Set Working Directory -> Choose Directory.
+Select the Directory where your files are. 
 
-```{r}
-setwd("~/Desktop/")
-```
-
-You can use the GUI menus as well if you have trouble with that.
-You can do this by going to Session -> Set Working Directory -> Choose Directory
 Then, we read in the datasets that you just unzipped. To do this,
-run the following line with the path *containing* your unzipped
-files (not the files themselves). So, if you put them on the Desktop,
-do this:
+run the following line of code:
 
 ```{r}
-text_dtm <- load_data("~/Desktop/NAMEOFYOURFOLDER")
+text_dtm <- load_data(".")
 ```
 
 Now, we'll use that data and run a topic model over it. Here I am
@@ -252,9 +245,12 @@ you choose to create the output).
 
 Finally, we now commit the new data files you just built to the GitHub fork
 you have. Drag and drop the data files into the "data" directory on GitHub.
+Do NOT drag the data folder in. Upload the content of the folder. 
 
 If your page is published, you should see the new topic models! Note that you
 may need to open an incognito mode to refresh the JSON files.
+
+The site will be: https://YOURUSERNAME.github.io/dh-topic-models/
 
 If the site is not loading fast enough, on a mac you can download the whole
 repository as a zip file. Unzip and and open a terminal window. You need to
