@@ -24,6 +24,8 @@ Once downloaded, install the dmg or exe file as you would any software.
 
 ### Step 3: Install R packages
 
+If you already did this when installing R, skip this step.
+
 Now, we need to install several add-ons to the R language. We can do this from
 within R. Open the program. Then, copy and paste the following lines one by one
 into the R terminal:
@@ -246,8 +248,23 @@ you choose to create the output).
 ### Step 7: Push Results to GitHub
 
 Finally, we now commit the new data files you just built to the GitHub fork
-you have. Drag and drop the data files into the "data" directory on GitHub.
-Do NOT drag the data folder in. Upload the content of the folder. 
+you have (https://github.com/YOURUSERNAME/dh-topic-models).
+
+Inside of your folder where you have your topic modeling files, you will see a file called 
+"data" alongside all_topic_model , all_txt, etc. 
+![](https://github.com/nolauren/2018introdh/blob/master/img/Screen%20Shot%202018-09-25%20at%2010.22.01%20AM.png)
+
+We  want to upload the content of this folder into the "data" folder in your Github fork: https://github.com/YOURUSERNAME/dh-topic-models
+
+![](https://github.com/nolauren/2018introdh/blob/master/img/Screen%20Shot%202018-09-25%20at%2010.27.45%20AM.png)
+
+Do NOT drag the data folder in. Upload the content of the folder by selecting the files inside the "data" folder. 
+
+![](https://github.com/nolauren/2018introdh/blob/master/img/Screen%20Shot%202018-09-25%20at%2010.22.10%20AM.png)
+
+Drag and drop the data files into the "data" directory on GitHub. 
+
+https://github.com/nolauren/dh-topic-models
 
 If your page is published, you should see the new topic models! Note that you
 may need to open an incognito mode to refresh the JSON files.
